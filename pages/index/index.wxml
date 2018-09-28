@@ -1,13 +1,69 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view class='index_container'>
+    <swiper class='swiper' autoplay='true' interval='3000' circular='true'>
+        <block wx:for="{{sportList}}" wx:for-index="index" wx:for-item="item">
+            <swiper-item class='swiper_item'>
+                <view class='swiper_item_box'>
+                    <view class='swiper_item_box_left'>
+                        <view class='swiper_leftBox_top_date'>
+                            <text>世界杯</text>
+                            <text>06-30</text>
+                            <text>02:00</text>
+                        </view>
+                        <view class='swiper_leftBox_center_team'>
+                            <view class='swiper_leftBox_center_team_item'>
+                                <image src='../../image/1.png' class='swiper_leftBox_center_team_item_logo'></image>
+                                <text class='swiper_leftBox_center_team_item_name'>巴西</text>
+                            </view>
+                            <view class='swiper_vs'>VS</view>
+                            <view class='swiper_leftBox_center_team_item'>
+                                <image src='../../image/1.png' class='swiper_leftBox_center_team_item_logo'></image>
+                                <text class='swiper_leftBox_center_team_item_name'>巴西</text>
+                            </view>
+                        </view>
+                        <view class='swiper_leftBox_bottom_odds'>
+                            <text class='swiper_leftBox_bottom_odds_text'>胜1.25</text>
+                            <text class='swiper_leftBox_bottom_odds_text'>胜1.25</text>
+                            <text class='swiper_leftBox_bottom_odds_text'>胜1.25</text>
+                        </view>
+                    </view>
+                    <view class='swiper_line'></view>
+                    <view class='swiper_item_box_right'>
+                        <view class='swiper_rightBox_top'>
+                            <block wx:for="{{sportList}}">
+                                <image class='swiper_experts_img' src='../../image/1.png'></image>
+                            </block>
+                        </view>
+                        <view class='swiper_rightBox_center_number'>72</view>
+                        <view class='swiper_rightBox_center_text'>专家解读</view>
+                        <view class='swiper_rightBox_bottom'>{{index + 1}}/{{sportList.length}}</view>
+                    </view>
+                </view>   
+            </swiper-item>
+        </block>    
+    </swiper>
+    <view class='hotExpert_box'>
+        <view class='hotExpert_logo_box'>
+            <image class='hotExpert_logo' src='../../image/hotExpert.png'></image>
+        </view>
+        <view class='hotExpert'>
+            <block wx:for="{{sportList}}">
+                <view class='hotExpert_item'>
+                    <image class='hotExpert_item_img' src='../../image/1.png'></image>
+                    <view class='hotExpert_item_info'>
+                        <text class='hotExpert_item_name'>德玛西亚</text>
+                        <text class='hotExpert_item_hit'>近7中6</text>
+                        <view class='hotExpert_item_sell'>
+                            <text class='hotExpert_item_sell_text'>在售：</text>
+                            <text class='hotExpert_item_sell_number'>20</text>
+                        </view>
+                    </view>
+                </view>
+            </block>
+            <view class='moreExpert'>
+                <image class='moreExpert_img' src='../../image/moreExpert.png'></image>
+                <text>更多</text>
+            </view>
+        </view>
+    </view>
 </view>
