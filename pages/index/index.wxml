@@ -1,5 +1,6 @@
 <!--index.wxml-->
-<view class='index_container'>
+<scroll-view class='index_container' scroll-x="true">
+    <!-- top swiper -->
     <swiper class='swiper' autoplay='true' interval='3000' circular='true'>
         <block wx:for="{{sportList}}" wx:for-index="index" wx:for-item="item">
             <swiper-item class='swiper_item'>
@@ -42,6 +43,7 @@
             </swiper-item>
         </block>    
     </swiper>
+    <!-- hot expert -->
     <view class='hotExpert_box'>
         <view class='hotExpert_logo_box'>
             <image class='hotExpert_logo' src='../../image/hotExpert.png'></image>
@@ -66,4 +68,60 @@
             </view>
         </view>
     </view>
-</view>
+    <!-- hot commentary-->
+    <view class='hotCommentary_box'>
+        <view class='hotCommentary_logo_box'>
+            <image class='hotCommentary_logo' src='../../image/hotCommentary.png'></image>
+        </view>
+        <view class='hotCommentary_type_box'>
+            <block wx:for="{{commentaryTypeArray}}" wx:for-item="commentaryType" wx:for-key="type">
+                <view class='hotCommentary_type_list'>
+                    <text class='hotCommentary_type_list_text'>{{commentaryType.type}}</text>
+                    <text class="{{commentaryType.isSelect ? 'hotCommentary_type_list_underLine' : ''}}"></text>
+                </view>
+            </block>
+        </view>
+        <swiper class='hotCommentary_list_box'>
+            <block>
+                <swiper-item class='hotCommentary_list_box_item'>
+                    <view class='hotCommentary_list'>
+                        <view class='hotCommentary_list_topBox'>
+                            <image class='hotCommentary_list_logo' src='../../image/1.png'></image>
+                            <view class='hotCommentary_list_info'>
+                                <view class='hotCommentary_list_info_name'>德玛西亚</view>
+                                <view class='hotCommentary_list_info_label'>
+                                    <image class='zqmj' src='../../image/zqmj.png'></image>
+                                    <text class='hotCommentary_list_info_label_result'>近6中6</text>
+                                    <text class='hotCommentary_list_info_label_best'>5连红</text>
+                                </view>
+                            </view>
+                            <view class='hotCommentary_list_resultData'>
+                                <view class='hotCommentary_list_resultData_numberBox'>
+                                    <text class='hotCommentary_list_resultData_number'>90</text>
+                                    <text class='hotCommentary_list_resultData_sup'>%</text>
+                                </view>
+                                <view class='hotCommentary_list_resultData_text'>命中率</view>
+                            </view>
+                        </view>
+                        <view class='hotCommentary_list_centerBox'>
+                            <view class='hotCommentary_title'>
+                                【云长昨日2场比分全中！连红3天6场!】这场比赛
+免费为您推荐！世界杯内容看一场少一场了。
+                            </view>
+                            <view class='hotCommentary_content_box'>
+                                <view class='hotCommentary_content_list'>
+                                    <text class='hotCommentary_content_list_date'>07-05 23:00</text>
+                                    <text class='hotCommentary_content_list_belong'>巴西</text>
+                                    <text class='hotCommentary_content_list_teams'>巴萨VS皇马</text>
+                                </view>
+                            </view>
+                        </view>
+                        <view class='hotCommentary_list_bottomBox'>2222</view>
+                    </view>
+                </swiper-item>
+                <swiper-item>2</swiper-item>
+                <swiper-item>3</swiper-item>
+            </block>
+        </swiper>
+    </view>
+</scroll-view>

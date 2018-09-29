@@ -2,4 +2,33 @@
 page {
     font-family:PingFangSC-Medium;
     background-color: #F8F8F8;
+    /* height: 100%; */
+    padding-bottom: 100rpx;
 }
+swiper-item {
+    overflow: visible;
+}
+.cpfxs {
+    width: 164rpx;
+    height: 32rpx;
+}
+.mtmj {
+    width: 134rpx;
+    height: 32rpx;
+}
+.sqmr {
+    width: 134rpx;
+    height: 32rpx;
+}
+.tvdk {
+    width: 118rpx;
+    height: 32rpx;
+}
+.zqmj {
+    width: 134rpx;
+    height: 32rpx;
+} 
+.zywj {
+    width: 134rpx;
+    height: 32rpx;
+} 

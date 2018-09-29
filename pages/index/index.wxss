@@ -1,4 +1,7 @@
 /* swiper */
+.index_container {
+    height: 100%;
+}
 .swiper {
     width: 100%;
     height: 260rpx;
@@ -100,17 +103,20 @@
     text-align: right;
 }
 /* hot expert */
+.hotExpert_box {
+    margin-bottom: 50rpx;
+}
 .hotExpert_logo_box {
     text-align: center;
     margin-bottom: 28rpx;
 }
 .hotExpert_logo {
     width: 336rpx;
-    height: 29rpx;
+    height: 30rpx;
 }
 .hotExpert {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .hotExpert_item {
     width: 175rpx;
@@ -132,6 +138,8 @@
     width: 175rpx;
     height: 188rpx;
     background-color: #fff;
+    border-radius:10rpx;
+    box-shadow:0 1rpx 10rpx 0 rgba(215,215,215,0.46);
     padding-bottom: 15rpx;
     display: flex;
     flex-direction: column;
@@ -182,4 +190,158 @@
     width: 114rpx;
     height: 114rpx;
     margin-bottom: 20rpx;
+}
+/* hot commentary */
+.hotCommentary_logo_box {
+    text-align: center;
+    margin-bottom: 28rpx;
+}
+.hotCommentary_logo {
+    width: 336rpx;
+    height: 30rpx;
+}
+.hotCommentary_type_box {
+    box-sizing: border-box;
+    margin: 0 25rpx;
+    width: 700rpx;
+    height: 91rpx;
+    padding-bottom: 10rpx;
+    background:rgba(255,255,255,1);
+    border-radius:10rpx;
+    margin-bottom: 30rpx;
+    box-shadow:0rpx 1rpx 10rpx 0rpx rgba(227,227,227,0.46);
+    display: flex;
+    justify-content: space-between;
+}
+.hotCommentary_type_list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.hotCommentary_type_list_text {
+    font-size: 32rpx;
+    color: #000;
+    margin-bottom: 14rpx;
+}
+.hotCommentary_type_list_underLine {
+    width:92rpx;
+    height:6rpx;
+    background:rgba(255,22,46,1);
+    border-radius: 3rpx;
+}
+/* hot commentary swiper*/
+.hotCommentary_list_box {
+    box-sizing: border-box;
+    width: 100%;
+    /* height: 100%; */
+    /* padding: 30rpx 26rpx; */
+}
+.hotCommentary_list {
+    box-sizing: border-box;
+    width: 702rpx;
+    background-color: #fff;
+    margin: 0 24rpx;
+    padding: 24rpx;
+    border-radius:10rpx;
+    box-shadow:0 1rpx 20rpx 0 rgba(215,215,215,0.32);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.hotCommentary_list_topBox {
+    box-sizing: border-box;
+    width: 100%;
+    height: 98rpx;
+    margin-bottom: 24rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.hotCommentary_list_logo {
+    width: 84rpx;
+    height: 84rpx;
+}
+.hotCommentary_list_resultData {
+    width: 84rpx;
+    height: 84rpx;
+    text-align: right;
+}
+.hotCommentary_list_resultData_number {
+    font-size: 44rpx;
+    color: #FF1A31;
+}
+.hotCommentary_list_resultData_sup {
+    font-size: 14rpx;
+    color: #FF1A31;
+    vertical-align: text-top;
+}
+.hotCommentary_list_resultData_text {
+    font-size: 20rpx;
+    color: #FF1A31;
+}
+.hotCommentary_list_info {
+    box-sizing: border-box;
+    flex: 1;
+    height: 100%;
+    padding-left: 16rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.hotCommentary_list_info_name {
+    font-size: 30rpx;
+    color: #333; 
+}
+.hotCommentary_list_info_label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.hotCommentary_list_info_label_result {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0 4rpx;
+    font-size: 22rpx;
+    color: #CC6F16;
+    border: 1rpx solid #CC6F16;
+    border-radius: 6rpx;
+    margin-left: 8rpx; 
+}
+.hotCommentary_list_info_label_best {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 2rpx 8rpx;
+    font-size: 22rpx;
+    color: #fff;
+    background-color: #FF1D19;
+    border-radius: 6rpx;
+    margin-left: 8rpx; 
+}
+.hotCommentary_title {
+    font-size: 28rpx;
+    color: #666;
+    margin-bottom: 24rpx;
+}
+.hotCommentary_content_list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24rpx;
+    color: #8C8C8C;
+    background-color: #F8F8F8;
+    line-height: 34rpx;
+    border-radius: 4rpx;
+}
+.hotCommentary_content_list_date {
+    margin-left: 14rpx;
+}
+.hotCommentary_content_list_belong {
+    
+}
+.hotCommentary_content_list_teams {
+    margin-right: 20rpx;
+}
+.hotCommentary_list_box_item {
+    height: 500rpx;
 }
