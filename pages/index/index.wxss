@@ -235,8 +235,9 @@
 .hotCommentary_list_box {
     box-sizing: border-box;
     width: 100%;
-    /* height: 100%; */
-    /* padding: 30rpx 26rpx; */
+}
+.hotCommentary_list_box_item {
+    margin-bottom: 24rpx;
 }
 .hotCommentary_list {
     box-sizing: border-box;
@@ -324,24 +325,59 @@
     color: #666;
     margin-bottom: 24rpx;
 }
+.hotCommentary_list_centerBox {
+    margin-bottom: 10rpx;
+}
 .hotCommentary_content_list {
     display: flex;
     justify-content: space-between;
     font-size: 24rpx;
     color: #8C8C8C;
     background-color: #F8F8F8;
-    line-height: 34rpx;
+    line-height: 46rpx;
     border-radius: 4rpx;
 }
 .hotCommentary_content_list_date {
     margin-left: 14rpx;
 }
-.hotCommentary_content_list_belong {
-    
-}
 .hotCommentary_content_list_teams {
     margin-right: 20rpx;
 }
-.hotCommentary_list_box_item {
-    height: 500rpx;
+.hotCommentary_list_bottomBox {
+    display: flex;
+    justify-content: space-between;
+}
+.hotCommentary_list_bottomBox {
+    display: flex;
+    align-items: center;
+}
+.hotCommentary_list_push {
+    font-size: 22rpx;
+    color: #8C8C8C;
+}
+.hotCommentary_list_state {
+    font-size: 20rpx;
+    color: #999;
+    margin-left: 28rpx;
+}
+.hotCommentary_list_price {
+    font-size: 28rpx;
+    color: #FF1C33;
+}
+.hotCommentary_more {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34rpx;
+}
+.hotCommentary_more_btn {
+    width:221rpx;
+    height:60rpx;
+    background:rgba(255,255,255,1);
+    border-radius:30rpx;
+    box-shadow:0rpx 1rpx 16rpx 0rpx rgba(172,172,172,0.26);
+    font-size: 24rpx;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

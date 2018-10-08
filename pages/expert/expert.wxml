@@ -1,0 +1,56 @@
+<!--pages/export/expert.wxml-->
+<view class='expert_info'>
+    <view class='expert_info_topBox'>
+        <view class='expert_info_topBox_left'>
+            <image class='expert_info_logo' src='../../image/1.png'></image>
+            <view class='expert_info_nameBox'>
+                <text class='expert_info_name'>德玛西亚之力</text>
+                <image class='expert_info_tag mtmj' src='../../image/mtmj.png'></image>
+            </view>
+        </view>
+        <view class='expert_info_topBox_right'>
+            <view class='expert_focus_btnBox'>
+                <text class='expert_focus_btn'>关注</text>
+            </view>
+            <text class='expert_focus_number'>2000人关注</text>
+        </view>
+    </view>
+    <view class='expert_info_bottomBox'>
+        十年国际足球记者生涯，世界杯欧洲杯一线报道经历，多年足彩分析经验为为受到国际货币持续关注愉电视剧啊好大大说的撒的的撒的撒打算的撒的撒打算的撒的程序正常的的撒打算的做的撒
+    </view>
+</view>
+<view class='expert_dataBox'>
+    <view class='expert_data_timeBox'>
+        <view class='expert_data_week'>
+            <text class='red_dot'></text>
+            <text class='expert_data_week_text'>近7天</text>
+            <text class='red_dot'></text>
+        </view>
+        <view class='expert_data_month expert_data_select'>
+            <text class='red_dot'></text>
+            <text class='expert_data_month_text'>近30天</text>
+            <text class='red_dot'></text>
+        </view>
+    </view>
+    <view class='expert_data_detailBox'>
+        <view class='expert_data_detail'>
+            <text>方案</text>
+            <text class='expert_data_detail_number'>20个</text>
+        </view>
+        <view class='vertical_line'></view>
+        <view class='expert_data_detail'>
+            <text>状态</text>
+            <text class='expert_data_detail_number'>近7中6</text>
+        </view>
+        <view class='vertical_line'></view>
+        <view class='expert_data_detail'>
+            <text>当前连红</text>
+            <text class='expert_data_detail_number'>6连红</text>
+        </view>
+        <view class='vertical_line'></view>
+        <view class='expert_data_detail'>
+            <text>命中率</text>
+            <text class='expert_data_detail_number'>90%</text>
+        </view>
+    </view>
+</view>

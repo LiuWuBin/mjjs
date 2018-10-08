@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<scroll-view class='index_container' scroll-x="true">
+<view class='index_container'>
     <!-- top swiper -->
     <swiper class='swiper' autoplay='true' interval='3000' circular='true'>
         <block wx:for="{{sportList}}" wx:for-index="index" wx:for-item="item">
@@ -81,9 +81,9 @@
                 </view>
             </block>
         </view>
-        <swiper class='hotCommentary_list_box'>
-            <block>
-                <swiper-item class='hotCommentary_list_box_item'>
+        <view class='hotCommentary_list_box'>
+            <block wx:for="{{sportList}}">
+                <view class='hotCommentary_list_box_item'>
                     <view class='hotCommentary_list'>
                         <view class='hotCommentary_list_topBox'>
                             <image class='hotCommentary_list_logo' src='../../image/1.png'></image>
@@ -106,7 +106,7 @@
                         <view class='hotCommentary_list_centerBox'>
                             <view class='hotCommentary_title'>
                                 【云长昨日2场比分全中！连红3天6场!】这场比赛
-免费为您推荐！世界杯内容看一场少一场了。
+                                    免费为您推荐！世界杯内容看一场少一场了。
                             </view>
                             <view class='hotCommentary_content_box'>
                                 <view class='hotCommentary_content_list'>
@@ -116,12 +116,19 @@
                                 </view>
                             </view>
                         </view>
-                        <view class='hotCommentary_list_bottomBox'>2222</view>
+                        <view class='hotCommentary_list_bottomBox'>
+                            <view class='hotCommentary_list_bottomBox_state'>
+                                <text class='hotCommentary_list_push'>7小时前发布</text>
+                                <text class='hotCommentary_list_state'>未开赛</text>
+                            </view>
+                            <text class='hotCommentary_list_price'>¥88</text>
+                        </view>
                     </view>
-                </swiper-item>
-                <swiper-item>2</swiper-item>
-                <swiper-item>3</swiper-item>
+                </view>
             </block>
-        </swiper>
+        </view>
+        <view class='hotCommentary_more'>
+            <text class='hotCommentary_more_btn'>查看更多</text>
+        </view>
     </view>
-</scroll-view>
+</view>
