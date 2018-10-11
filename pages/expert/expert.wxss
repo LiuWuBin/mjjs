@@ -141,3 +141,97 @@
     font-size: 28rpx;
     color: #E93E48;
 }
+.export_game_typeBox {
+    box-sizing: border-box;
+    width:442rpx;
+    height:60rpx;
+    background:linear-gradient(90deg,rgba(255,20,48,1),rgba(255,19,108,1));
+    border-radius:30rpx;
+    font-size: 26rpx;
+    margin: 0 auto;
+    padding: 4rpx;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.export_game_type {
+    box-sizing: border-box;
+    width:150rpx;
+    height:50rpx;
+    border-radius:25rpx;
+    font-size: 26rpx;
+    padding: 0 8rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.export_game_type_select {
+    background-color: #fff;
+    color: #E93E48;
+}
+
+.export_game_list {
+    margin: 0 24rpx;
+    padding: 24rpx;
+    background:rgba(255,255,255,1);
+    border-radius:10rpx;
+    box-shadow:0 1rpx 10rpx 0 rgba(215,215,215,0.32);
+    margin-bottom: 40rpx;
+}
+.expert_game_list_title {
+    color: #666;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    margin-bottom: 24rpx;
+}
+.expert_game_list_planList {
+    background-color: #F8F8F8;
+    color: #8C8C8C;
+    font-size: 24rpx;
+    line-height: 44rpx;
+    padding: 0 14rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.expert_game_list_status {
+    padding-top: 20rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.expert_game_list_date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.expert_game_list_push {
+    color: #8C8C8C;
+    font-size: 22rpx;
+}
+.expert_game_list_time {
+    color: #8C8C8C;
+    font-size: 22rpx;
+    margin-left: 28rpx;
+}
+.expert_game_list_price {
+    color: #FF1C33;
+    font-size: 28rpx;
+}
+.export_game_list_isEnd {
+    margin: 0 24rpx;
+    padding: 24rpx;
+    background:rgba(255,255,255,1);
+    border-radius:10rpx;
+    box-shadow:0 1rpx 10rpx 0 rgba(215,215,215,0.32);
+    margin-bottom: 40rpx;
+    position: relative;
+}
+.expert_game_list_result {
+    width: 87rpx;
+    height: 82rpx;
+    position: absolute;
+    top: 10rpx;
+    right: 18rpx;
+}

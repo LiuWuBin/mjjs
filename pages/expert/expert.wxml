@@ -54,3 +54,70 @@
         </view>
     </view>
 </view>
+<view class='expert_game_listBox'>
+    <view class='export_game_typeBox'>
+        <view class='export_game_type'>
+            <text class='red_dot'></text>
+            <text>推荐中</text>
+            <text class='red_dot'></text>
+        </view>
+        <view class='export_game_type'>
+            <text class='red_dot'></text>
+            <text>比赛中</text>
+            <text class='red_dot'></text>
+        </view>
+        <view class='export_game_type export_game_type_select'>
+            <text class='red_dot'></text>
+            <text>已结束</text>
+            <text class='red_dot'></text>
+        </view>
+    </view>
+    <block>
+        <view class='export_game_list'>
+            <view class='expert_game_list_title'>
+                【云长昨日2场比分全中！连红3天6场!】这场比赛
+                费为您推荐！世界杯内容看一场少一场了。
+            </view>
+            <view class='expert_game_list_planList'>
+                <text>07-05 23:00</text>
+                <text>巴西</text>
+                <text>尤文图斯VS巴萨</text>
+            </view>
+            <view class='expert_game_list_status'>
+                <view class='expert_game_list_date'>
+                    <text class='expert_game_list_push'>7小时前发布</text>
+                    <text class='expert_game_list_time'>未开赛</text>
+                </view>
+                <view class='expert_game_list_price'>¥88.00</view>
+            </view>
+        </view>
+    </block>
+    <block>
+        <view class='export_game_list_isEnd'>
+            <view class='expert_game_list_title'>
+                【云长昨日2场比分全中！连红3天6场!】这场比赛
+                费为您推荐！世界杯内容看一场少一场了。
+            </view>
+            <view class='expert_game_list_planList'>
+                <text>07-05 23:00</text>
+                <text>巴西</text>
+                <text>尤文图斯VS巴萨</text>
+            </view>
+            <image class='expert_game_list_result' src='../../image/hit_icon.png'></image>
+        </view>
+    </block>
+    <block>
+        <view class='export_game_list_isEnd'>
+            <view class='expert_game_list_title'>
+                【云长昨日2场比分全中！连红3天6场!】这场比赛
+                费为您推荐！世界杯内容看一场少一场了。
+            </view>
+            <view class='expert_game_list_planList'>
+                <text>07-05 23:00</text>
+                <text>巴西</text>
+                <text>尤文图斯VS巴萨</text>
+            </view>
+            <image class='expert_game_list_result' src='../../image/miss_icon.png'></image>
+        </view>
+    </block>
+</view>
